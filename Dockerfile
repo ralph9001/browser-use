@@ -59,6 +59,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Install Playwright and browsers with system dependencies
 ENV PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
+RUN pip install playwright
 RUN playwright install --with-deps chromium
 RUN playwright install-deps
 
